@@ -1,16 +1,311 @@
-<form name="submit-to-google-sheet">
-  <input name="email" type="email" placeholder="Email" required>
-  <button type="submit">Send</button>
-</form>
+<!DOCTYPE html>
+<html lang="en-US">
 
-<script>
-  const scriptURL = '<SCRIPT URL>'
-  const form = document.forms['submit-to-google-sheet']
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cintya | Profile</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap"/>
+    </noscript>
+    <link href="css/font-awesome/css/all.min.css?ver=1.0.1" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=1.0.1" rel="stylesheet">
+    <link href="css/aos.css?ver=1.0.1" rel="stylesheet">
+    <link href="css/main.css?ver=1.0.1" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+</head>
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+<body id="top">
+    <header class="bg-light">
+        <div class="container text-center text-lg-left">
+            <div class="p-3 clearfix">
+                <h1 class="site-title mb-0">Profil Diri</h1>
+                <div class="site-nav">
+                    <nav role="navigation">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item"><a class="nav-link" href="https://twitter.com/CSanega" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/cintyasanegaakmalia.akmalia/" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/cityasn_/" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/channel/UCFIvozv9NwGjeugfurePW9Q" title="Instagram"><i class="fab fa-youtube"></i><span class="menu-title sr-only">Youtube</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page-content">
+        <div id="content">
+            <div class="page-content">
+                <div id="content">
+                    <div class="cover bg-light">
+                        <div class="container pt-2 pb-4 px-3">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="mt-5">
+                                        <p class="lead text-uppercase mb-1">Hello!</p>
+                                        <h1 class="intro-title marker">I’m Cintya Sanega Akmalia</h1>
+                                        <p class="lead fw-normal mt-3">College Student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-section pt-4 px-3 px-lg-4">
+                        <div class="container-narrow">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2 class="h4 my-2">I’m Cintya Sanega Akmalia.</h2>
+                                    <p>Saya seorang mahasiswa dari Telkom University jurusan D3 Teknologi Telekomunikasi yang berada di Fakultas Ilmu Terapan.</p>
+                                    <div class="row mt-3">
+                                        <div class="col-sm-2">
+                                            <div class="pb-1">Date Birth</div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="pb-1 fw-bolder">: 28 October 2002</div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="pb-1">Email</div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="pb-1 fw-bolder">: akmaliasanegacintya@gmail.com</div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="pb-1">Phone</div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="pb-1 fw-bolder">: +62 812-1589-6584</div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="pb-1">Address</div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="pb-1 fw-bolder">: Purworejo, Central Java, Indonesia</div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="pb-1">Status</div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="pb-1 fw-bolder">: College Student</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 offset-md-1"><img class="avatar img-fluid mt-2" src="myself.jpg" width="400" height="400" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contant-section px-3 px-lg-4 pb-4 mt-5 mb-5" id="contact">
+                        <div class="container-narrow">
+                            <div class="text-center mb-5">
+                                <h2 class="marker marker-center">Education</h2>
+                            </div>
+                            <div class="row">
+                                <div class="row mt-3">
+                                    <div class="col-sm-2">
+                                        <div class="pb-1">2007 - 2014</div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="pb-1 fw-bolder">SD N Kemiri</div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="pb-1">2014 - 2017</div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="pb-1 fw-bolder">SMP N 12 Purworejo</div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="pb-1">2017 - 2020</div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="pb-1 fw-bolder">SMA N 2 Purworejo</div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="pb-1">2020 - Now</div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="pb-1 fw-bolder"> Telkom University</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contant-section px-3 px-lg-4 pb-4 mt-5 mb-5" id="contact">
+                    <div class="container-narrow">
+                        <div class="text-center mb-5">
+                            <h2 class="marker marker-center">Organization</h2>
+                        </div>
+                        <div class="row">
+                            <div class="row mt-3">
+                                <div class="col-sm-2">
+                                    <div class="pb-1">2015 - 2016</div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="pb-1 fw-bolder">Pimpinan Pasukan Pramuka</div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="pb-1">2017 - 2018</div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="pb-1 fw-bolder">Anggota Palang Merah Remaja</div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="pb-1">2020</div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="pb-1 fw-bolder">Himpunan Mahasiswa Purworejo</div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="pb-1">2021 - Now</div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="pb-1 fw-bolder"> DPM KEMA FIT</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contant-section px-3 px-lg-4 pb-4 mt-5 mb-5" id="contact">
+                <div class="container-narrow">
+                    <div class="text-center mb-5">
+                        <h2 class="marker marker-center">Commitee</h2>
+                    </div>
+                    <div class="row">
+                        <div class="row mt-3">
+                            <div class="col-sm-2">
+                                <div class="pb-1">2020</div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="pb-1 fw-bolder">Telyutopia 2021</div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="pb-1">2020 - 2021</div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="pb-1 fw-bolder">Komisi Pemilihan Raya</div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="pb-1">2021 - Now</div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="pb-1 fw-bolder">Tesseract Act 2: Continuity</div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="pb-1">2021 - Now</div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="pb-1 fw-bolder"> NEAX 8th Period</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contant-section px-3 px-lg-4 pb-4 mt-5 mb-5" id="contact">
+            <div class="container-narrow">
+                <div class="text-center mb-5">
+                    <h2 class="marker marker-center">Contact Me</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" data-aos="zoom-in" data-aos-delay="50">
+                        <div class="bg-light my-2 p-3 pt-2">
+                            <form action="" method="POST">
+                                <div class="form-group my-2">
+                                    <label for="name" class="form-label fw-bolder">Name</label>
+                                    <input class="form-control" type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group my-2">
+                                    <label for="email" class="form-label fw-bolder">Email</label>
+                                    <input class="form-control" type="email" id="email" name="_replyto" required>
+                                </div>
+                                <div class="form-group my-2">
+                                    <label for="message" class="form-label fw-bolder">Message</label>
+                                    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
+                                </div>
+                                <button class="btn btn-primary mt-2" type="submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mt-3">
+                            <div class="h5">Find Me</div>
+                            <p>Get in touch using my email or my contact number.</p>
+                            <p>See you!</p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="pb-1">Email</div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="pb-1 fw-bolder">: akmaliasanegacintya@gmail.com</div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="pb-1">Whatsapp</div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="pb-1 fw-bolder">: +62 812-1589-6584</div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="pb-1">Line</div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="pb-1 fw-bolder">: @cintyasanega</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="pt-4 pb-4 text-center bg-light">
+        <div class="container">
+            <div class="my-3">
+                <div class="h5">Cintya Sanega Akmalia</div>
+                <p>College Student</p>
+                <div class="footer-nav">
+                    <nav role="navigation">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item"><a class="nav-link" href="https://twitter.com/CSanega" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/cintyasanegaakmalia.akmalia/" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/cityasn_/" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/channel/UCFIvozv9NwGjeugfurePW9Q" title="Instagram"><i class="fab fa-youtube"></i><span class="menu-title sr-only">Youtube</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="text-small text-secondary">
+                <div class="mb-1">Copyright 2021 &copy; Tugas Besar Bengkel Pemrograman 2</div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/jquery.min.js?ver=1.0.1"></script>
+    <script src="scripts/imagesloaded.pkgd.min.js?ver=1.0.1"></script>
+    <script src="scripts/masonry.pkgd.min.js?ver=1.0.1"></script>
+    <script src="scripts/bootstrap.bundle.min.js?ver=1.0.1"></script>
+    <script src="scripts/aos.js?ver=1.0.1"></script>
+    <script src="scripts/main.js?ver=1.0.1"></script>
+</body>
+
+</html>
